@@ -12,7 +12,7 @@ with open('vectorizer.pkl', 'rb') as file:
 # Function to predict the sentiment
 def predict_sentiment(tweet):
     text_vectorized = vectorizer.transform([tweet])
-    prediction = classifier.predict_proba(text_vectorized)[%]
+    prediction = classifier.predict_proba(text_vectorized)[0]
     return prediction
 
 def main():
