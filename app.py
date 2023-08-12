@@ -31,8 +31,8 @@ def main():
                 st.success("Hate speech")
             else:
                 st.success("Bukan hate speech")
-            st.info(f"Prob hate speech: {prediction_hs: .%f}")
-            st.info(f"Prob not hate speech: {prediction_nhs: .%f}")
+            st.info(f"Prob hate speech: {prediction_hs: .%}")
+            st.info(f"Prob not hate speech: {prediction_nhs: .%}")
 
 if __name__ == '__main__':
     main()
