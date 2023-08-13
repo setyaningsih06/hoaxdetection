@@ -29,7 +29,7 @@ def main():
             prediction_nhs = prediction[0]*100
             if prediction_hs > prediction_nhs:
                 st.success("Hate speech")
-             else:
+            else:
                 st.success("Bukan hate speech")
             st.info(f"Prob hate speech: {prediction_hs: .2f}%")
             st.info(f"Prob not hate speech: {prediction_nhs: .2f}%")
